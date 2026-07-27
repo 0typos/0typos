@@ -1,4 +1,4 @@
-<img src="./banner.svg" alt="typo — let AI jesus take the wheel" width="100%">
+<img src="./assets/banner.svg" alt="typo — let AI jesus take the wheel" width="100%">
 
 ```console
 $ whoami
