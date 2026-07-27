@@ -1,4 +1,4 @@
-<img src="./banner.svg" alt="typo — i let AI Jesus take the wheel" width="100%">
+<img src="./banner.svg" alt="typo — let AI jesus take the wheel" width="100%">
 
 ```console
 $ whoami
@@ -48,7 +48,7 @@ would expect, and published because it turned out to be genuinely useful.
 - **Verification is not negotiable.** Sources pinned by digest, actions pinned
   by SHA, base images pinned by hash. The model is fast and confident, which is
   exactly why the gates exist.
-- **Bugs are welcome.** Open an issue. I will point AI Jesus at it and read the
+- **Bugs are welcome.** Open an issue. I will point AI jesus at it and read the
   resulting diff with appropriate suspicion.
 - **No warranty, no roadmap, no vibes-based release schedule.** Just cron.
 
