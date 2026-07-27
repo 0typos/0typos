@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 280" width="1000" height="280" role="img" aria-label="typo — I let AI Jesus take the wheel">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 280" width="1000" height="280" role="img" aria-label="typo — let AI jesus take the wheel">
   <defs>
     <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#12021f"/>
@@ -62,7 +62,7 @@
   <line x1="62" y1="146" x2="640" y2="146" stroke="#ff2e97" stroke-width="2" opacity="0.75" filter="url(#softglow)"/>
 
   <text x="62" y="180" font-family="ui-monospace, 'DejaVu Sans Mono', 'Courier New', monospace"
-        font-size="25" fill="#00e5ff" filter="url(#softglow)">&#x2f;&#x2f; i let AI Jesus take the wheel</text>
+        font-size="25" fill="#00e5ff" filter="url(#softglow)">&#x2f;&#x2f; let AI jesus take the wheel</text>
 
   <text x="62" y="205" font-family="ui-monospace, 'DejaVu Sans Mono', 'Courier New', monospace"
         font-size="15" fill="#8b7fd4" letter-spacing="2">he drives. i read the diff.</text>
