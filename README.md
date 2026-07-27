@@ -28,16 +28,12 @@ would expect, and published because it turned out to be genuinely useful.
 | project | status | what it is |
 | --- | --- | --- |
 | **[statics](https://github.com/0typos/statics)** | `live` | Static Linux troubleshooting binaries for the machine with no package manager, no libc you trust, and no network you control. 13 architectures, musl + pinned Zig, rebuilt monthly, SBOMs and Sigstore attestations on every release. |
+| **[glacialcast](https://github.com/0typos/glacialcast)** | `pre-1.0` | End-to-end-encrypted, low-bandwidth Wayland screen viewer with bounded history. Rust, native portal + PipeWire capture, VA-API H.264, CENC fMP4 over MPEG-DASH, browser viewer on MSE and Clear Key. The relay never sees your key. |
 
 > AI wrote a lot of that. AI does not get to skip the reproducibility check.
 
-### ▸ inbound
-
-| project | status | what it is |
-| --- | --- | --- |
-| **glacialcast** | `pre-1.0` | End-to-end-encrypted, low-bandwidth Wayland screen viewer with bounded history. Rust, native portal + PipeWire capture, VA-API H.264, CENC fMP4 over MPEG-DASH, browser viewer on MSE and Clear Key. The relay never sees your key. |
-
-> Lands here once I stop finding bugs in it. Current pace suggests a while.
+> glacialcast is published, not finished. It runs three 1440p screens on my
+> desk every day; `pre-1.0` means the wire format can still move under you.
 
 ---
 
