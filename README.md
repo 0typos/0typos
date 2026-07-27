@@ -2,7 +2,7 @@
 
 ```console
 $ whoami
-typo — independent security researcher, developer, professional prompt-haver
+typo — independent security researcher, developer, semi-professional prompt wrangler
 
 $ cat ./policy
 point AI at a problem. read the diff. keep what survives contact with reality.
