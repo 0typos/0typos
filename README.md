@@ -15,39 +15,29 @@ broke in the wild, a gap in my own tooling, a problem I got tired of solving by
 hand. The machine did most of the typing. I picked the direction, argued with
 it, and kept the parts that held up.
 
-It is not slop. It is also not artisanal, hand-carved, small-batch code. It is
-the honest middle: fast to build, tested harder than you would expect, and
-published because it turned out to be genuinely useful.
+It's not *only* slop. It's also definitely not hand-carved, artisanal,
+small-batch code. It's the honest middle: fast to build, tested harder than you
+would expect, and published because it turned out to be genuinely useful.
 
 ---
 
 ## ▚ what's parked here
 
-### ▸ [statics](https://github.com/0typos/statics) &nbsp;·&nbsp; `shipping`
+### ▸ shipping
 
-Static Linux troubleshooting binaries for the machine you *actually* have to
-debug — the one with no package manager, no libc you trust, and no network you
-control.
+| project | status | what it is |
+| --- | --- | --- |
+| **[statics](https://github.com/0typos/statics)** | `live` | Static Linux troubleshooting binaries for the machine with no package manager, no libc you trust, and no network you control. 13 architectures, musl + pinned Zig, rebuilt monthly, SBOMs and Sigstore attestations on every release. |
 
-Thirteen architectures. musl and a pinned Zig toolchain, no dynamic
-interpreter. Rebuilt every month from the latest upstream sources and published
-only when all thirteen build clean and pass under QEMU. Every release ships
-SPDX SBOMs and Sigstore attestations.
+> AI wrote a lot of that. AI does not get to skip the reproducibility check.
 
-Two uncached builds get compared byte for byte before anything goes out. AI
-wrote a lot of it. AI does not get to skip the reproducibility check.
+### ▸ inbound
 
-### ▸ glacialcast &nbsp;·&nbsp; `inbound`
+| project | status | what it is |
+| --- | --- | --- |
+| **glacialcast** | `pre-1.0` | End-to-end-encrypted, low-bandwidth Wayland screen viewer with bounded history. Rust, native portal + PipeWire capture, VA-API H.264, CENC fMP4 over MPEG-DASH, browser viewer on MSE and Clear Key. The relay never sees your key. |
 
-End-to-end-encrypted, low-bandwidth Wayland screen viewer with bounded history.
-Rust. Native XDG portal and PipeWire capture with no GStreamer, VA-API H.264
-with an in-process software fallback, CENC-encrypted fragmented MP4 served as
-MPEG-DASH, and a dependency-free browser viewer on MSE and Clear Key.
-
-Roughly one frame per second, with the cursor tracked separately at up to
-thirty. The relay never sees your key and cannot decrypt a thing.
-
-Landing here once I stop finding bugs in it. Current pace suggests a while.
+> Lands here once I stop finding bugs in it. Current pace suggests a while.
 
 ---
 
