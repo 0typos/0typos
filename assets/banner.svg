@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 280" width="1000" height="280" role="img" aria-label="typo — let AI jesus take the wheel">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#12021f"/>
+      <stop offset="55%" stop-color="#0a0a16"/>
+      <stop offset="100%" stop-color="#05060d"/>
+    </linearGradient>
+    <linearGradient id="chrome" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00e5ff"/>
+      <stop offset="55%" stop-color="#7af5ff"/>
+      <stop offset="100%" stop-color="#ff2e97"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softglow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#7af5ff" opacity="0.05"/>
+    </pattern>
+  </defs>
+
+  <rect width="1000" height="280" fill="url(#sky)"/>
+
+  <!-- horizon grid -->
+  <g stroke="#ff2e97" stroke-width="1" opacity="0.28">
+    <line x1="0" y1="212" x2="1000" y2="212"/>
+    <line x1="0" y1="230" x2="1000" y2="230"/>
+    <line x1="0" y1="252" x2="1000" y2="252"/>
+    <line x1="0" y1="280" x2="1000" y2="280"/>
+  </g>
+  <g stroke="#00e5ff" stroke-width="1" opacity="0.18">
+    <line x1="500" y1="205" x2="500" y2="280"/>
+    <line x1="500" y1="205" x2="330" y2="280"/>
+    <line x1="500" y1="205" x2="130" y2="280"/>
+    <line x1="500" y1="205" x2="-90" y2="280"/>
+    <line x1="500" y1="205" x2="670" y2="280"/>
+    <line x1="500" y1="205" x2="870" y2="280"/>
+    <line x1="500" y1="205" x2="1090" y2="280"/>
+  </g>
+
+  <!-- title -->
+  <text x="60" y="118" font-family="ui-monospace, 'DejaVu Sans Mono', 'Courier New', monospace"
+        font-size="92" font-weight="700" letter-spacing="10"
+        fill="url(#chrome)" filter="url(#glow)">typo</text>
+
+  <!-- blinking caret -->
+  <rect x="340" y="66" width="20" height="66" fill="#ff2e97" filter="url(#softglow)">
+    <animate attributeName="opacity" values="1;1;0;0;1" dur="1.2s" repeatCount="indefinite"/>
+  </rect>
+
+  <line x1="62" y1="146" x2="640" y2="146" stroke="#ff2e97" stroke-width="2" opacity="0.75" filter="url(#softglow)"/>
+
+  <text x="62" y="180" font-family="ui-monospace, 'DejaVu Sans Mono', 'Courier New', monospace"
+        font-size="25" fill="#00e5ff" filter="url(#softglow)">&#x2f;&#x2f; let AI jesus take the wheel</text>
+
+  <!-- prompt -> review -> push, with "review" struck through. Drawn as an
+       explicit line rather than text-decoration, which renderers disagree on. -->
+  <g font-family="ui-monospace, 'DejaVu Sans Mono', 'Courier New', monospace"
+     font-size="15" letter-spacing="2">
+    <text x="62" y="205" fill="#8b7fd4">prompt -&gt; </text>
+    <text x="172.3" y="205" fill="#6b5fa8">review</text>
+    <text x="246" y="205" fill="#8b7fd4"> -&gt; push</text>
+  </g>
+  <line x1="171" y1="200.5" x2="237" y2="200.5" stroke="#ff2e97" stroke-width="1.8" opacity="0.95"/>
+
+  <!-- right-hand status stack -->
+  <g font-family="ui-monospace, 'DejaVu Sans Mono', 'Courier New', monospace" font-size="13" opacity="0.92">
+    <text x="700" y="72" fill="#ff2e97">[ SEC RESEARCH  ]</text>
+    <text x="700" y="98" fill="#00e5ff">[ STATIC BUILDS ]</text>
+    <text x="700" y="124" fill="#7af5ff">[ AI-DRIVEN     ]</text>
+    <text x="700" y="150" fill="#8b7fd4">[ SHIPPED ANYWAY]</text>
+  </g>
+
+  <rect width="1000" height="280" fill="url(#scan)"/>
+</svg>
