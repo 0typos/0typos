@@ -29,11 +29,16 @@ would expect, and published because it turned out to be genuinely useful.
 | --- | --- | --- |
 | **[statics](https://github.com/0typos/statics)** | `live` | Static Linux troubleshooting binaries for the machine with no package manager, no libc you trust, and no network you control. 13 architectures, musl + pinned Zig, rebuilt monthly, SBOMs and Sigstore attestations on every release. |
 | **[glacialcast](https://github.com/0typos/glacialcast)** | `pre-1.0` | End-to-end-encrypted, low-bandwidth Wayland screen viewer with bounded history. Rust, native portal + PipeWire capture, VA-API H.264, CENC fMP4 over MPEG-DASH, browser viewer on MSE and Clear Key. The relay never sees your key. |
+| **[scanr](https://github.com/0typos/scanr)** | `pre-1.0` | Proxy-aware TCP connect scanner that always leaves a record you can audit. Rust, no async runtime, SOCKS5-native. Measures what your proxy can actually tell you instead of assuming, collapses a /16 into a 2.6 KB record, resumes an interrupted scan exactly rather than approximately, and hands the open ports to `nmap -sV` instead of pretending to fingerprint them. |
 
 > AI wrote a lot of that. AI does not get to skip the reproducibility check.
 
 > glacialcast is published, not finished. It runs three 1440p screens on my
 > desk every day; `pre-1.0` means the wire format can still move under you.
+
+> scanr will not tell you what a service *is*. It records what one volunteers
+> unprompted and hands the rest to nmap, which has two decades of signatures and
+> does not need a worse copy of them.
 
 ---
 
